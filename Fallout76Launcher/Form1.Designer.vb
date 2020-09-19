@@ -36,36 +36,36 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.play
-        Me.PictureBox1.Location = New System.Drawing.Point(743, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(560, 24)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(63, 26)
+        Me.PictureBox1.Size = New System.Drawing.Size(275, 50)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.options
-        Me.PictureBox2.Location = New System.Drawing.Point(724, 85)
+        Me.PictureBox2.Location = New System.Drawing.Point(560, 74)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(82, 24)
+        Me.PictureBox2.Size = New System.Drawing.Size(275, 50)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.support
-        Me.PictureBox3.Location = New System.Drawing.Point(721, 137)
+        Me.PictureBox3.Location = New System.Drawing.Point(560, 124)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(85, 24)
+        Me.PictureBox3.Size = New System.Drawing.Size(275, 50)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
         'PictureBox4
         '
         Me.PictureBox4.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources._exit
-        Me.PictureBox4.Location = New System.Drawing.Point(767, 189)
+        Me.PictureBox4.Location = New System.Drawing.Point(560, 174)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(39, 23)
+        Me.PictureBox4.Size = New System.Drawing.Size(275, 50)
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
         '
