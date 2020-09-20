@@ -74,6 +74,7 @@ Partial Class Options2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.ClientSize = New System.Drawing.Size(361, 475)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.TabControl)
