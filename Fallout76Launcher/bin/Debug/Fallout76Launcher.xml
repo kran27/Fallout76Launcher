@@ -47,6 +47,11 @@ Fallout76Launcher
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Fallout76Launcher.My.Resources.Resources.optionsbg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Fallout76Launcher.My.Resources.Resources.optionslit">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

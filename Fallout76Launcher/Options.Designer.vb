@@ -22,7 +22,7 @@ Partial Class Options
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GraphicsLabel = New System.Windows.Forms.Label()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.OK = New System.Windows.Forms.Button()
         Me.Borderless = New System.Windows.Forms.CheckBox()
@@ -32,22 +32,29 @@ Partial Class Options
         Me.Antialias = New System.Windows.Forms.ComboBox()
         Me.Anisotropic = New System.Windows.Forms.ComboBox()
         Me.AspectLabel = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ResolutionLabel = New System.Windows.Forms.Label()
+        Me.AntialiasLabel = New System.Windows.Forms.Label()
+        Me.AnisotropicLabel = New System.Windows.Forms.Label()
         Me.ResWin169 = New System.Windows.Forms.ComboBox()
         Me.ResWin1610 = New System.Windows.Forms.ComboBox()
+        Me.DetailLabel = New System.Windows.Forms.Label()
+        Me.Low = New System.Windows.Forms.Button()
+        Me.Medium = New System.Windows.Forms.Button()
+        Me.High = New System.Windows.Forms.Button()
+        Me.Ultra = New System.Windows.Forms.Button()
+        Me.Reset = New System.Windows.Forms.Button()
+        Me.Advanced = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'GraphicsLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label1.Location = New System.Drawing.Point(17, 11)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Graphics Adapter and Resolution"
+        Me.GraphicsLabel.AutoSize = True
+        Me.GraphicsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.GraphicsLabel.Location = New System.Drawing.Point(17, 11)
+        Me.GraphicsLabel.Name = "GraphicsLabel"
+        Me.GraphicsLabel.Size = New System.Drawing.Size(163, 13)
+        Me.GraphicsLabel.TabIndex = 0
+        Me.GraphicsLabel.Text = "Graphics Adapter and Resolution"
         '
         'Cancel
         '
@@ -139,32 +146,32 @@ Partial Class Options
         Me.AspectLabel.TabIndex = 9
         Me.AspectLabel.Text = "Aspect Ratio"
         '
-        'Label2
+        'ResolutionLabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(86, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 13)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Resolutions"
+        Me.ResolutionLabel.AutoSize = True
+        Me.ResolutionLabel.Location = New System.Drawing.Point(86, 62)
+        Me.ResolutionLabel.Name = "ResolutionLabel"
+        Me.ResolutionLabel.Size = New System.Drawing.Size(62, 13)
+        Me.ResolutionLabel.TabIndex = 10
+        Me.ResolutionLabel.Text = "Resolutions"
         '
-        'Label3
+        'AntialiasLabel
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(88, 86)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 13)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Antialiasing"
+        Me.AntialiasLabel.AutoSize = True
+        Me.AntialiasLabel.Location = New System.Drawing.Point(88, 86)
+        Me.AntialiasLabel.Name = "AntialiasLabel"
+        Me.AntialiasLabel.Size = New System.Drawing.Size(60, 13)
+        Me.AntialiasLabel.TabIndex = 11
+        Me.AntialiasLabel.Text = "Antialiasing"
         '
-        'Label4
+        'AnisotropicLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(50, 112)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(98, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Anisotropic Filtering"
+        Me.AnisotropicLabel.AutoSize = True
+        Me.AnisotropicLabel.Location = New System.Drawing.Point(50, 112)
+        Me.AnisotropicLabel.Name = "AnisotropicLabel"
+        Me.AnisotropicLabel.Size = New System.Drawing.Size(98, 13)
+        Me.AnisotropicLabel.TabIndex = 12
+        Me.AnisotropicLabel.Text = "Anisotropic Filtering"
         '
         'ResWin169
         '
@@ -186,20 +193,91 @@ Partial Class Options
         Me.ResWin1610.Size = New System.Drawing.Size(263, 21)
         Me.ResWin1610.TabIndex = 14
         '
+        'DetailLabel
+        '
+        Me.DetailLabel.AutoSize = True
+        Me.DetailLabel.Location = New System.Drawing.Point(16, 156)
+        Me.DetailLabel.Name = "DetailLabel"
+        Me.DetailLabel.Size = New System.Drawing.Size(34, 13)
+        Me.DetailLabel.TabIndex = 15
+        Me.DetailLabel.Text = "Detail"
+        '
+        'Low
+        '
+        Me.Low.Location = New System.Drawing.Point(22, 176)
+        Me.Low.Name = "Low"
+        Me.Low.Size = New System.Drawing.Size(68, 25)
+        Me.Low.TabIndex = 16
+        Me.Low.Text = "Low"
+        Me.Low.UseVisualStyleBackColor = True
+        '
+        'Medium
+        '
+        Me.Medium.Location = New System.Drawing.Point(91, 176)
+        Me.Medium.Name = "Medium"
+        Me.Medium.Size = New System.Drawing.Size(68, 25)
+        Me.Medium.TabIndex = 17
+        Me.Medium.Text = "Medium"
+        Me.Medium.UseVisualStyleBackColor = True
+        '
+        'High
+        '
+        Me.High.Location = New System.Drawing.Point(160, 176)
+        Me.High.Name = "High"
+        Me.High.Size = New System.Drawing.Size(68, 25)
+        Me.High.TabIndex = 18
+        Me.High.Text = "High"
+        Me.High.UseVisualStyleBackColor = True
+        '
+        'Ultra
+        '
+        Me.Ultra.Location = New System.Drawing.Point(229, 176)
+        Me.Ultra.Name = "Ultra"
+        Me.Ultra.Size = New System.Drawing.Size(68, 25)
+        Me.Ultra.TabIndex = 19
+        Me.Ultra.Text = "Ultra"
+        Me.Ultra.UseVisualStyleBackColor = True
+        '
+        'Reset
+        '
+        Me.Reset.Location = New System.Drawing.Point(298, 176)
+        Me.Reset.Name = "Reset"
+        Me.Reset.Size = New System.Drawing.Size(137, 25)
+        Me.Reset.TabIndex = 20
+        Me.Reset.Text = "Reset"
+        Me.Reset.UseVisualStyleBackColor = True
+        '
+        'Advanced
+        '
+        Me.Advanced.Location = New System.Drawing.Point(299, 204)
+        Me.Advanced.Name = "Advanced"
+        Me.Advanced.Size = New System.Drawing.Size(136, 25)
+        Me.Advanced.TabIndex = 21
+        Me.Advanced.Text = "Advanced"
+        Me.Advanced.UseVisualStyleBackColor = True
+        '
         'Options
         '
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.optionsbg
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(456, 319)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Advanced)
+        Me.Controls.Add(Me.Reset)
+        Me.Controls.Add(Me.Ultra)
+        Me.Controls.Add(Me.High)
+        Me.Controls.Add(Me.Medium)
+        Me.Controls.Add(Me.Low)
+        Me.Controls.Add(Me.DetailLabel)
         Me.Controls.Add(Me.ResWin1610)
         Me.Controls.Add(Me.ResWin169)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.AnisotropicLabel)
+        Me.Controls.Add(Me.AntialiasLabel)
+        Me.Controls.Add(Me.ResolutionLabel)
         Me.Controls.Add(Me.AspectLabel)
         Me.Controls.Add(Me.Anisotropic)
         Me.Controls.Add(Me.Antialias)
@@ -209,7 +287,7 @@ Partial Class Options
         Me.Controls.Add(Me.Borderless)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.Cancel)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.GraphicsLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Options"
         Me.ShowIcon = False
@@ -221,7 +299,7 @@ Partial Class Options
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents GraphicsLabel As Label
     Friend WithEvents Cancel As Button
     Friend WithEvents OK As Button
     Friend WithEvents Borderless As CheckBox
@@ -231,9 +309,16 @@ Partial Class Options
     Friend WithEvents Antialias As ComboBox
     Friend WithEvents Anisotropic As ComboBox
     Friend WithEvents AspectLabel As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents ResolutionLabel As Label
+    Friend WithEvents AntialiasLabel As Label
+    Friend WithEvents AnisotropicLabel As Label
     Friend WithEvents ResWin169 As ComboBox
     Friend WithEvents ResWin1610 As ComboBox
+    Friend WithEvents DetailLabel As Label
+    Friend WithEvents Low As Button
+    Friend WithEvents Medium As Button
+    Friend WithEvents High As Button
+    Friend WithEvents Ultra As Button
+    Friend WithEvents Reset As Button
+    Friend WithEvents Advanced As Button
 End Class
