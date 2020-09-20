@@ -46,6 +46,15 @@
             ResWin169.Visible = False
         End If
     End Sub
+
+    Private Sub Advanced_Click(sender As Object, e As EventArgs) Handles Advanced.Click
+        Options2.ShowDialog()
+    End Sub
+
+    Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
+        Options.HideDialog()
+
+    End Sub
 #End Region
 
 End Class

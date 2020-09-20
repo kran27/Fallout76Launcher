@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options2.Designer.vb">
+      <DependentUpon>Options2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Options.Designer.vb">
       <DependentUpon>Options.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options2.resx">
+      <DependentUpon>Options2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

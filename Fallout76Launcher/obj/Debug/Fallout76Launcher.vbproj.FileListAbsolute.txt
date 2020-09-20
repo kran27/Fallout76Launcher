@@ -24,3 +24,4 @@ C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\F
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.exe
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.xml
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.pdb
+C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Options2.resources
