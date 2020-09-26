@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Options
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class Options
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.GraphicsLabel = New System.Windows.Forms.Label()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.OK = New System.Windows.Forms.Button()
         Me.Borderless = New System.Windows.Forms.CheckBox()
@@ -37,24 +36,15 @@ Partial Class Options
         Me.AnisotropicLabel = New System.Windows.Forms.Label()
         Me.ResWin169 = New System.Windows.Forms.ComboBox()
         Me.ResWin1610 = New System.Windows.Forms.ComboBox()
-        Me.DetailLabel = New System.Windows.Forms.Label()
         Me.Low = New System.Windows.Forms.Button()
         Me.Medium = New System.Windows.Forms.Button()
         Me.High = New System.Windows.Forms.Button()
         Me.Ultra = New System.Windows.Forms.Button()
         Me.Reset = New System.Windows.Forms.Button()
         Me.Advanced = New System.Windows.Forms.Button()
+        Me.Detail = New System.Windows.Forms.GroupBox()
+        Me.GraphAdaptRes = New System.Windows.Forms.GroupBox()
         Me.SuspendLayout()
-        '
-        'GraphicsLabel
-        '
-        Me.GraphicsLabel.AutoSize = True
-        Me.GraphicsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.GraphicsLabel.Location = New System.Drawing.Point(17, 11)
-        Me.GraphicsLabel.Name = "GraphicsLabel"
-        Me.GraphicsLabel.Size = New System.Drawing.Size(163, 13)
-        Me.GraphicsLabel.TabIndex = 0
-        Me.GraphicsLabel.Text = "Graphics Adapter and Resolution"
         '
         'Cancel
         '
@@ -193,15 +183,6 @@ Partial Class Options
         Me.ResWin1610.Size = New System.Drawing.Size(263, 21)
         Me.ResWin1610.TabIndex = 14
         '
-        'DetailLabel
-        '
-        Me.DetailLabel.AutoSize = True
-        Me.DetailLabel.Location = New System.Drawing.Point(16, 156)
-        Me.DetailLabel.Name = "DetailLabel"
-        Me.DetailLabel.Size = New System.Drawing.Size(34, 13)
-        Me.DetailLabel.TabIndex = 15
-        Me.DetailLabel.Text = "Detail"
-        '
         'Low
         '
         Me.Low.Location = New System.Drawing.Point(22, 176)
@@ -256,13 +237,30 @@ Partial Class Options
         Me.Advanced.Text = "Advanced"
         Me.Advanced.UseVisualStyleBackColor = True
         '
+        'Detail
+        '
+        Me.Detail.Location = New System.Drawing.Point(11, 156)
+        Me.Detail.Name = "Detail"
+        Me.Detail.Size = New System.Drawing.Size(434, 80)
+        Me.Detail.TabIndex = 22
+        Me.Detail.TabStop = False
+        Me.Detail.Text = "Detail"
+        '
+        'GraphAdaptRes
+        '
+        Me.GraphAdaptRes.Location = New System.Drawing.Point(11, 11)
+        Me.GraphAdaptRes.Name = "GraphAdaptRes"
+        Me.GraphAdaptRes.Size = New System.Drawing.Size(434, 137)
+        Me.GraphAdaptRes.TabIndex = 23
+        Me.GraphAdaptRes.TabStop = False
+        Me.GraphAdaptRes.Text = "Graphics Adapter and Resolution"
+        '
         'Options
         '
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.optionsbg
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(456, 319)
         Me.ControlBox = False
@@ -272,7 +270,6 @@ Partial Class Options
         Me.Controls.Add(Me.High)
         Me.Controls.Add(Me.Medium)
         Me.Controls.Add(Me.Low)
-        Me.Controls.Add(Me.DetailLabel)
         Me.Controls.Add(Me.ResWin1610)
         Me.Controls.Add(Me.ResWin169)
         Me.Controls.Add(Me.AnisotropicLabel)
@@ -287,7 +284,8 @@ Partial Class Options
         Me.Controls.Add(Me.Borderless)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.Cancel)
-        Me.Controls.Add(Me.GraphicsLabel)
+        Me.Controls.Add(Me.Detail)
+        Me.Controls.Add(Me.GraphAdaptRes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Options"
         Me.ShowIcon = False
@@ -298,8 +296,6 @@ Partial Class Options
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents GraphicsLabel As Label
     Friend WithEvents Cancel As Button
     Friend WithEvents OK As Button
     Friend WithEvents Borderless As CheckBox
@@ -314,11 +310,12 @@ Partial Class Options
     Friend WithEvents AnisotropicLabel As Label
     Friend WithEvents ResWin169 As ComboBox
     Friend WithEvents ResWin1610 As ComboBox
-    Friend WithEvents DetailLabel As Label
     Friend WithEvents Low As Button
     Friend WithEvents Medium As Button
     Friend WithEvents High As Button
     Friend WithEvents Ultra As Button
     Friend WithEvents Reset As Button
     Friend WithEvents Advanced As Button
+    Friend WithEvents Detail As GroupBox
+    Friend WithEvents GraphAdaptRes As GroupBox
 End Class

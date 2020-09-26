@@ -50,4 +50,37 @@
     End Sub
 #End Region
 
+#Region " .ini Presets "
+    Public Preset As String
+    Public Sub Set_L() Handles Low.Click
+        Preset = "_low"
+    End Sub
+    Public Sub Set_M() Handles Medium.Click
+        Preset = "_med"
+    End Sub
+    Public Sub Set_H() Handles High.Click
+        Preset = "_high"
+    End Sub
+    Public Sub Set_U() Handles Ultra.Click
+        Preset = "_ultra"
+    End Sub
+    Public Sub Copy_ini() Handles OK.Click
+        If Preset IsNot Nothing Then
+            If Preset Is "_low" Then
+
+                Application.Exit()
+            ElseIf Preset Is "_med" Then
+
+                Application.Exit()
+            ElseIf Preset Is "_high" Then
+
+                Application.Exit()
+            ElseIf Preset Is "_ultra" Then
+
+                Application.Exit()
+            End If
+        End If
+    End Sub
+#End Region
+
 End Class

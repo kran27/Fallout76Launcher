@@ -101,21 +101,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''  Looks up a localized string similar to this is the file known as &quot;LowPreset&quot;.
         '''</summary>
-        Friend ReadOnly Property options() As System.Drawing.Bitmap
+        Friend ReadOnly Property LowPreset() As String
             Get
-                Dim obj As Object = ResourceManager.GetObject("options", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Return ResourceManager.GetString("LowPreset", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property optionsbg() As System.Drawing.Bitmap
+        Friend ReadOnly Property options() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("optionsbg", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("options", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

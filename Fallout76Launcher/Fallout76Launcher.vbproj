@@ -201,5 +201,8 @@
   <ItemGroup>
     <None Include="Resources\optionsbg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LowPreset.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
