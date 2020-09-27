@@ -91,6 +91,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Options2.Designer.vb">
       <DependentUpon>Options2.vb</DependentUpon>
     </Compile>
@@ -116,11 +121,6 @@
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -133,9 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.vb</DependentUpon>
@@ -155,6 +155,8 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\Ultra.ini" />
+    <None Include="Resources\UltraPrefs.ini" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg.png" />
@@ -163,6 +165,12 @@
     <None Include="Resources\Fallout 76.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\High.ini" />
+    <None Include="Resources\HighPrefs.ini" />
+    <None Include="Resources\Low.ini" />
+    <None Include="Resources\LowPrefs.ini" />
+    <None Include="Resources\Medium.ini" />
+    <None Include="Resources\MediumPrefs.ini" />
     <None Include="Resources\play.png" />
   </ItemGroup>
   <ItemGroup>

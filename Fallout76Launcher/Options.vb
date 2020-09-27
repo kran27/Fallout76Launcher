@@ -54,30 +54,30 @@
     Public Preset As String
     Public Sub Set_L() Handles Low.Click
         Preset = "_low"
+        MsgBox("Video settings have been set for Low Quality.", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Video settings have been set for Low Quality.")
     End Sub
     Public Sub Set_M() Handles Medium.Click
         Preset = "_med"
+        MsgBox("Video settings have been set for Medium Quality.", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Video settings have been set for Medium Quality.")
     End Sub
     Public Sub Set_H() Handles High.Click
         Preset = "_high"
+        MsgBox("Video settings have been set for High Quality.", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Video settings have been set for High Quality.")
     End Sub
     Public Sub Set_U() Handles Ultra.Click
         Preset = "_ultra"
+        MsgBox("Video settings have been set for Ultra Quality.", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Video settings have been set for Ultra Quality.")
     End Sub
     Public Sub Copy_ini() Handles OK.Click
         If Preset IsNot Nothing Then
             If Preset Is "_low" Then
 
-                Application.Exit()
             ElseIf Preset Is "_med" Then
 
-                Application.Exit()
             ElseIf Preset Is "_high" Then
 
-                Application.Exit()
             ElseIf Preset Is "_ultra" Then
 
-                Application.Exit()
             End If
         End If
     End Sub
