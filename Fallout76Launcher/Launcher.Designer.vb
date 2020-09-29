@@ -73,6 +73,7 @@ Partial Class Launcher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.SystemColors.WindowText
         Me.BackgroundImage = Global.Fallout76Launcher.My.Resources.Resources.bg
         Me.ClientSize = New System.Drawing.Size(835, 400)

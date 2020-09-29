@@ -101,46 +101,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to [ScreenSplatter]
-        '''bBloodSplatterEnabled = 1
-        '''
-        '''[Display]
-        '''bDynamicObjectQueryManager = 1
-        '''bMultiThreadedAccumulation = 1
-        '''bMultiThreadedRenderingUNP = 1
-        '''fDecalLOD0 = 8192
-        '''fSAORadius = 108.2
-        '''fSAOBias = 0.6
-        '''fSunUpdateThreshold = 0.5f
-        '''bFull Screen = 1
-        '''bBorderless = 0
-        '''
-        '''[HairLighting]
-        '''fHairPrimSpecScale = 0.04
-        '''fHairPrimSpecPow = 388
-        '''fHairPrimSpecShift = 1.0
-        '''fHairSecSpecScale = 0.89
-        '''fHairSecSpecPow = 98
-        '''fHairSecSpecShift = 1.2
-        '''
-        '''[MapMenu]
-        '''uLockedObjectMapLOD = 16
-        '''uLockedTerrainLOD = 32
-        '''
-        '''[Grass] [rest of string was truncated]&quot;;.
-        '''</summary>
-        Friend ReadOnly Property High() As String
-            Get
-                Return ResourceManager.GetString("High", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized string similar to [Display]
         '''iMaxAnisotropy=16
-        '''fShadowDistance=120000.0000
-        '''fDirShadowDistance=120000.0000
-        '''iShadowMapResolution=2048
+        '''fShadowDistance=120000.0
+        '''fDirShadowDistance=120000.0
+        '''iShadowMapResolution=2048.0
         '''uiShadowFilter=3
         '''uiOrthoShadowFilter=3
         '''fBlendSplitDirShadow=48.0000
@@ -151,63 +116,28 @@ Namespace My.Resources
         '''bSAOEnable=1
         '''uWaterShadowFilter=3
         '''iVolumetricLightingTextureQuality=2
-        '''iLocation X=0
-        '''iLocation Y=0
-        '''bFull Screen=1
-        '''bBorderless=0
-        '''iGraphicPreset=3
-        '''fShadowBiasScale=1.0000
-        '''iDirShadowSplits=4
-        '''uShadowExpirationMS=5000
-        ''' [rest of string was truncated]&quot;;.
+        '''
+        '''[Decals]
+        '''bDecals=1
+        '''bSkinnedDecals=1
+        '''uMaxDecals=250
+        '''uMaxSkinDecals=50
+        '''
+        '''[TerrainManager]
+        '''fBlockMaximumDistance=180000.0000
+        '''fBlockLevel2Distance=11 [rest of string was truncated]&quot;;.
         '''</summary>
-        Friend ReadOnly Property HighPrefs() As String
+        Friend ReadOnly Property High() As String
             Get
-                Return ResourceManager.GetString("HighPrefs", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to [ScreenSplatter]
-        '''bBloodSplatterEnabled = 1
-        '''
-        '''[Display]
-        '''bDynamicObjectQueryManager = 1
-        '''bMultiThreadedAccumulation = 1
-        '''bMultiThreadedRenderingUNP = 1
-        '''fDecalLOD0 = 8192
-        '''fSAORadius = 108.2
-        '''fSAOBias = 0.6
-        '''fSunUpdateThreshold = 0.5f
-        '''bFull Screen = 1
-        '''bBorderless = 0
-        '''
-        '''[HairLighting]
-        '''fHairPrimSpecScale = 0.04
-        '''fHairPrimSpecPow = 388
-        '''fHairPrimSpecShift = 1.0
-        '''fHairSecSpecScale = 0.89
-        '''fHairSecSpecPow = 98
-        '''fHairSecSpecShift = 1.2
-        '''
-        '''[Audio]
-        '''bEnableAudio = 1
-        '''
-        '''[MapMenu]
-        '''uLockedObjectMapLOD = 16
-        '''uLoc [rest of string was truncated]&quot;;.
-        '''</summary>
-        Friend ReadOnly Property Low() As String
-            Get
-                Return ResourceManager.GetString("Low", resourceCulture)
+                Return ResourceManager.GetString("High", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized string similar to [Display]
         '''iMaxAnisotropy=0
-        '''fShadowDistance=60000.0000
-        '''fDirShadowDistance=60000.0000
+        '''fShadowDistance=60000.0
+        '''fDirShadowDistance=60000.0
         '''iShadowMapResolution=1024
         '''uiShadowFilter=1
         '''uiOrthoShadowFilter=1
@@ -219,64 +149,30 @@ Namespace My.Resources
         '''bSAOEnable=1
         '''uWaterShadowFilter=1
         '''iVolumetricLightingTextureQuality=0
-        '''iLocation X=0
-        '''iLocation Y=0
-        '''bFull Screen=1
-        '''bBorderless=0
-        '''iGraphicPreset=1
-        '''fShadowBiasScale=1.0000
-        '''iDirShadowSplits=4
-        '''uShadowExpirationMS=5000
-        '''uPointL [rest of string was truncated]&quot;;.
+        '''
+        '''[Decals]
+        '''bDecals=0
+        '''bSkinnedDecals=0
+        '''uMaxDecals=0
+        '''uMaxSkinDecals=0
+        '''
+        '''[TerrainManager]
+        '''fBlockMaximumDistance=100000.0000
+        '''fBlockLevel2Distance=75000.0000
+        '''fB [rest of string was truncated]&quot;;.
         '''</summary>
-        Friend ReadOnly Property LowPrefs() As String
+        Friend ReadOnly Property Low() As String
             Get
-                Return ResourceManager.GetString("LowPrefs", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to [ScreenSplatter]
-        '''bBloodSplatterEnabled = 1
-        '''
-        '''[Display]
-        '''bDynamicObjectQueryManager = 1
-        '''bMultiThreadedAccumulation = 1
-        '''bMultiThreadedRenderingUNP = 1
-        '''fDecalLOD0 = 8192
-        '''fSAORadius = 108.2
-        '''fSAOBias = 0.6
-        '''fSunUpdateThreshold = 0.5f
-        '''bFull Screen = 1
-        '''bBorderless = 0
-        '''
-        '''[HairLighting]
-        '''fHairPrimSpecScale = 0.04
-        '''fHairPrimSpecPow = 388
-        '''fHairPrimSpecShift = 1.0
-        '''fHairSecSpecScale = 0.89
-        '''fHairSecSpecPow = 98
-        '''fHairSecSpecShift = 1.2
-        '''
-        '''[Audio]
-        '''bEnableAudio = 1
-        '''
-        '''[MapMenu]
-        '''uLockedObjectMapLOD = 16
-        '''uLoc [rest of string was truncated]&quot;;.
-        '''</summary>
-        Friend ReadOnly Property Medium() As String
-            Get
-                Return ResourceManager.GetString("Medium", resourceCulture)
+                Return ResourceManager.GetString("Low", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized string similar to [Display]
         '''iMaxAnisotropy=16
-        '''fShadowDistance=90000.0000
-        '''fDirShadowDistance=90000.0000
-        '''iShadowMapResolution=2048
+        '''fShadowDistance=90000.0
+        '''fDirShadowDistance=90000.0
+        '''iShadowMapResolution=2048.0
         '''uiShadowFilter=2
         '''uiOrthoShadowFilter=2
         '''fBlendSplitDirShadow=48.0000
@@ -287,19 +183,20 @@ Namespace My.Resources
         '''bSAOEnable=1
         '''uWaterShadowFilter=2
         '''iVolumetricLightingTextureQuality=1
-        '''iLocation X=0
-        '''iLocation Y=0
-        '''bFull Screen=1
-        '''bBorderless=0
-        '''iGraphicPreset=2
-        '''fShadowBiasScale=1.0000
-        '''iDirShadowSplits=4
-        '''uShadowExpirationMS=5000
-        '''uPoi [rest of string was truncated]&quot;;.
+        '''
+        '''[Decals]
+        '''bDecals=1
+        '''bSkinnedDecals=1
+        '''uMaxDecals=100
+        '''uMaxSkinDecals=35
+        '''
+        '''[TerrainManager]
+        '''fBlockMaximumDistance=100000.0000
+        '''fBlockLevel2Distance=80000. [rest of string was truncated]&quot;;.
         '''</summary>
-        Friend ReadOnly Property MediumPrefs() As String
+        Friend ReadOnly Property Medium() As String
             Get
-                Return ResourceManager.GetString("MediumPrefs", resourceCulture)
+                Return ResourceManager.GetString("Medium", resourceCulture)
             End Get
         End Property
         
@@ -364,47 +261,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to [ScreenSplatter]
-        '''bBloodSplatterEnabled = 1
-        '''
-        '''[Display]
-        '''bDynamicObjectQueryManager = 1
-        '''bMultiThreadedAccumulation = 1
-        '''bMultiThreadedRenderingUNP = 1
-        '''fDecalLOD0 = 8192
-        '''fSAORadius = 108.2
-        '''fSAOBias = 0.6
-        '''fSunUpdateThreshold = 0.5f
-        '''bFull Screen = 1
-        '''bBorderless = 0
-        '''
-        '''[HairLighting]
-        '''fHairPrimSpecScale = 0.04
-        '''fHairPrimSpecPow = 388
-        '''fHairPrimSpecShift = 1.0
-        '''fHairSecSpecScale = 0.89
-        '''fHairSecSpecPow = 98
-        '''fHairSecSpecShift = 1.2
-        '''
-        '''[Audio]
-        '''bEnableAudio = 1
-        '''
-        '''[MapMenu]
-        '''uLockedObjectMapLOD = 16
-        '''uLoc [rest of string was truncated]&quot;;.
-        '''</summary>
-        Friend ReadOnly Property Ultra() As String
-            Get
-                Return ResourceManager.GetString("Ultra", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized string similar to [Display]
         '''iMaxAnisotropy=16
-        '''fShadowDistance=150000.0000
-        '''fDirShadowDistance=150000.0000
-        '''iShadowMapResolution=2048
+        '''fShadowDistance=150000.0
+        '''fDirShadowDistance=150000.0
+        '''iShadowMapResolution=2048.0
         '''uiShadowFilter=3
         '''uiOrthoShadowFilter=3
         '''fBlendSplitDirShadow=48.0000
@@ -415,19 +276,20 @@ Namespace My.Resources
         '''bSAOEnable=1
         '''uWaterShadowFilter=3
         '''iVolumetricLightingTextureQuality=2
-        '''iLocation X=0
-        '''iLocation Y=0
-        '''bFull Screen=1
-        '''bBorderless=0
-        '''iGraphicPreset=4
-        '''fShadowBiasScale=1.0000
-        '''iDirShadowSplits=4
-        '''uShadowExpirationMS=5000
-        ''' [rest of string was truncated]&quot;;.
+        '''
+        '''[Decals]
+        '''bDecals=1
+        '''bSkinnedDecals=1
+        '''uMaxDecals=1000
+        '''uMaxSkinDecals=100
+        '''
+        '''[TerrainManager]
+        '''fBlockMaximumDistance=250000.0000
+        '''fBlockLevel2Distance= [rest of string was truncated]&quot;;.
         '''</summary>
-        Friend ReadOnly Property UltraPrefs() As String
+        Friend ReadOnly Property Ultra() As String
             Get
-                Return ResourceManager.GetString("UltraPrefs", resourceCulture)
+                Return ResourceManager.GetString("Ultra", resourceCulture)
             End Get
         End Property
     End Module

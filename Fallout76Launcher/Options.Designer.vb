@@ -260,7 +260,8 @@ Partial Class Options
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
+        Me.BackColor = System.Drawing.SystemColors.Menu
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(456, 319)
         Me.ControlBox = False
