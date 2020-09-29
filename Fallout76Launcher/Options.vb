@@ -1,4 +1,5 @@
-﻿Public Class Options
+﻿Imports System.Management
+Public Class Options
 
 #Region " Startup Code "
     Private Sub Box_Setup() Handles MyBase.VisibleChanged
@@ -83,6 +84,15 @@
         Anisotropic.SelectedIndex = 5
         Preset = "_ultra"
         MsgBox("Video settings have been set for Ultra Quality.", MsgBoxStyle.Information Or MsgBoxStyle.OkOnly, "Video settings have been set for Ultra Quality.")
+    End Sub
+    Public Sub Set_Auto() Handles Reset.Click
+        Dim query As New SelectQuery("Win32_VideoController")
+        Dim search As New ManagementObjectSearcher(query)
+        Dim info As ManagementObject
+        For Each info In search.Get()
+            Dim GPUName As String = info("Name").ToString
+            MsgBox(GPUName)
+        Next
     End Sub
     Public Sub Copy_ini() Handles OK.Click
         If Preset IsNot Nothing Then
