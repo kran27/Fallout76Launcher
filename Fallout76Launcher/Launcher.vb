@@ -51,6 +51,7 @@
 #Region " Button Clicks "
     Private Sub Play_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         MoveForm = False
+        Hide()
         System.Diagnostics.Process.Start("steam://rungameid/1151340")
         Application.Exit()
     End Sub

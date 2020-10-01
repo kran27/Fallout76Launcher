@@ -25,3 +25,17 @@ C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\F
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.xml
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.pdb
 C:\Users\Kieran\Documents\GitHub\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Options2.resources
+D:\Repos\Fallout76Launcher\Fallout76Launcher\bin\Debug\Fallout76Launcher.exe.config
+D:\Repos\Fallout76Launcher\Fallout76Launcher\bin\Debug\Fallout76Launcher.exe
+D:\Repos\Fallout76Launcher\Fallout76Launcher\bin\Debug\Fallout76Launcher.pdb
+D:\Repos\Fallout76Launcher\Fallout76Launcher\bin\Debug\Fallout76Launcher.xml
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.vbprojAssemblyReference.cache
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Launcher.resources
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Resources.resources
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Options.resources
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.Options2.resources
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.vbproj.GenerateResource.cache
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.vbproj.CoreCompileInputs.cache
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.exe
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.xml
+D:\Repos\Fallout76Launcher\Fallout76Launcher\obj\Debug\Fallout76Launcher.pdb
