@@ -96,21 +96,18 @@ Public Class Options
     End Sub
     Public Sub Copy_ini() Handles OK.Click
         If Preset IsNot Nothing Then
-            Dim cnamel As Byte = My.Computer.Name.Length
-            Dim uname As String = My.User.Name.Remove(0, cnamel + 1)
-            Dim dirst1 As String = "C:\Users\"
-            Dim dirst2 As String = "\Documents\My Games\Fallout 76\Fallout76.ini"
+            Dim dir As String = My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\My Games\Fallout 76\Fallout76.ini"
             If Preset Is "_low" Then
-                System.IO.File.WriteAllText(dirst1 & uname & dirst2, My.Resources.Low)
+                System.IO.File.WriteAllText(dir, My.Resources.Low)
                 Close()
             ElseIf Preset Is "_med" Then
-                System.IO.File.WriteAllText(dirst1 & uname & dirst2, My.Resources.Medium)
+                System.IO.File.WriteAllText(dir, My.Resources.Medium)
                 Close()
             ElseIf Preset Is "_high" Then
-                System.IO.File.WriteAllText(dirst1 & uname & dirst2, My.Resources.High)
+                System.IO.File.WriteAllText(dir, My.Resources.High)
                 Close()
             ElseIf Preset Is "_ultra" Then
-                System.IO.File.WriteAllText(dirst1 & uname & dirst2, My.Resources.Ultra)
+                System.IO.File.WriteAllText(dir, My.Resources.Ultra)
                 Close()
             End If
         End If
